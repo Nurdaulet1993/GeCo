@@ -1,0 +1,11 @@
+<section class="good-list">
+  <mat-card *ngFor="let good of goods">
+    <mat-card-header>
+      <mat-card-title>{{ good.name }}</mat-card-title>
+      <mat-card-subtitle>{{ good.price | currency }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-flat-button color="accent" (click)="onSelect(good)">Buy</button>
+    </mat-card-actions>
+  </mat-card>
+</section>

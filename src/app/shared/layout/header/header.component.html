@@ -1,0 +1,29 @@
+<header>
+  <mat-toolbar class="mat-elevation-z4">
+    <nav class="nav">
+      <ul class="nav-list list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" routerLinkActive="active" routerLink="goods">Goods</a>
+        </li>
+      </ul>
+
+      <ul class="nav-action-list list">
+        <li class="nav-action-list__item">
+          <button mat-flat-button color="accent">
+            Sign in
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+        </li>
+        <li class="nav-action-list__item">
+          <button mat-stroked-button routerLink="cart">
+            <mat-icon>shopping_cart</mat-icon>
+            Cart
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </mat-toolbar>
+</header>

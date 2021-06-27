@@ -1,0 +1,12 @@
+.good-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: (15 / 16) * 1rem;
+}
+
+::ng-deep .mat-card-header .mat-card-header-text {
+  margin: 0;
+}
+.mat-card-actions {
+  margin: 0;
+}

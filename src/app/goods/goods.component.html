@@ -1,0 +1,13 @@
+<div class="container">
+  <ul class="nav" *ngIf="(categories$ | async) as categories">
+    <li class="nav__item">
+      <button mat-stroked-button (click)="onCategorySelect(0)">All</button>
+    </li>
+    <li class="nav__item" *ngFor="let category of categories">
+      <button mat-stroked-button (click)="onCategorySelect(category.id)"> {{ category.name }}</button>
+    </li>
+  </ul>
+  <ng-container *ngIf="(goods$ | async) as goods">
+    <app-good-list [goods]="goods" (onGoodSelect)="onSelect($event)"></app-good-list>
+  </ng-container>
+</div>
